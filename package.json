@@ -1,0 +1,15 @@
+{
+  "name": "sub-fetch",
+  "version": "1.0.0",
+  "description": "Fetch subtitles.",
+  "main": "main.js",
+  "repository": {
+    "url": "https://github.com/sofiapm/sub-fetch",
+    "type": "git"
+  },
+  "author": "Sofia Martins",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "opensubtitles-api": "^3.3.0"
+  }
+}
