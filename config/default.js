@@ -4,6 +4,11 @@
  */
 
 module.exports = {
+  assets: {
+    bar_icon: {
+        dir: `file://${__dirname}/../assets/logo/logo.icns`
+    }
+  },
   templates: {
     main_window: {
         dir: `file://${__dirname}/../templates/index.html`
