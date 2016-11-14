@@ -2,14 +2,18 @@
   "name": "sub-fetch",
   "version": "1.0.0",
   "description": "Fetch subtitles.",
-  "main": "main.js",
   "repository": {
     "url": "https://github.com/sofiapm/sub-fetch",
     "type": "git"
   },
   "author": "Sofia Martins",
   "license": "UNLICENSED",
+  "scripts": {
+    "start": "electron ./bin/main.js"
+  },
   "dependencies": {
+    "config": "^1.24.0",
+    "electron-prebuilt": "^1.4.6",
     "opensubtitles-api": "^3.3.0"
   }
 }
