@@ -22,5 +22,6 @@ module.exports = {
   open_subtitles: {
       user_agent: 'OSTestUserAgentTemp'
   },
+  uploads_dir: `${__dirname}/../uploads/`,
   version: '/v0'
 };
