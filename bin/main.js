@@ -22,6 +22,9 @@ app.on('ready', () => {
 
     win.webContents.openDevTools();
 
+    win.webContents.on('will-navigate', function (event, url) {
+        event.preventDefault();
+    });
+
     menu.setMenu();
-    
 });
