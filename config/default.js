@@ -19,5 +19,8 @@ module.exports = {
         dir: `./${__dirname}/../src/index.js`
     }
   },
+  open_subtitles: {
+      user_agent: 'OSTestUserAgentTemp'
+  },
   version: '/v0'
 };
