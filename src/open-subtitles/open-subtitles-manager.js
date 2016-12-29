@@ -4,7 +4,7 @@
 
 const config = require('config');
 const OS = require('opensubtitles-api');
-const parser = require('episode-parser')
+const parser = require('episode-parser');
 const zlib = require('zlib'); 
 const request = require('request');
 
