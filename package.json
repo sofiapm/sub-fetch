@@ -9,6 +9,7 @@
   "author": "Sofia Martins",
   "license": "UNLICENSED",
   "scripts": {
+    "test": "mocha --opts .mocharc",
     "start": "electron ./bin/main.js",
     "lint": "./node_modules/.bin/eslint src; exit 0"
   },
@@ -18,6 +19,7 @@
     "episode-parser": "^1.2.0",
     "eslint": "^3.12.2",
     "md5-file": "^3.1.1",
+    "mocha": "^3.2.0",
     "opensubtitles-api": "^3.3.0"
   },
   "devDependencies": {

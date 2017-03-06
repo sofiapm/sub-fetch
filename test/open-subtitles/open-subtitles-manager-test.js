@@ -1,4 +1,4 @@
-const subtitlesManager = require('../../src/open-subtitles/open-subtitles-manager.js');
+const subtitlesManager = require('../../src/open-subtitles/open-subtitles-manager');
 
 describe('subtitlesManager', function() {
   const file = {
