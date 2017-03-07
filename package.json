@@ -9,7 +9,7 @@
   "author": "Sofia Martins",
   "license": "UNLICENSED",
   "scripts": {
-    "test": "mocha --opts .mocharc",
+    "test": "mocha $(find test -name '*-test.js')",
     "start": "electron ./bin/main.js",
     "lint": "./node_modules/.bin/eslint src; exit 0"
   },
