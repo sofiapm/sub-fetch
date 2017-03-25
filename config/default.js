@@ -22,6 +22,11 @@ module.exports = {
   open_subtitles: {
       user_agent: 'OSTestUserAgentTemp'
   },
+  test: {
+    tv_shows: {
+      dir: `/${__dirname}/../test/fixtures/tv-shows/`
+    }
+  },
   uploads_dir: `${__dirname}/../uploads/`,
   version: '/v0'
 };

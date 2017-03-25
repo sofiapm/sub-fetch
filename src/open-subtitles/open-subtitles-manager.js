@@ -17,6 +17,9 @@ const fileManager = require('../file/file-manager')
 class OpenSubtitlesManager {
 
   search (file) {
+    console.log(file.path)
+    console.log('sdv :')
+    console.log(fileManager.hashFile(file.path))
     const query = this.buildHashBestSearchObject(file, fileManager.hashFile(file.path))
 
     openSubtitles

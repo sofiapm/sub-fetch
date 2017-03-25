@@ -21,11 +21,16 @@ class FileManager {
 
   writeFile (path, buffer) {
     const subtitlePath = this.getSubtitlePath(path)
+
     console.log('Path: ' + subtitlePath)
-    fs.writeFile(subtitlePath, buffer.toString(), function (err) {
-      return err
-                ? console.log(err)
-                : console.log('The file was saved!')
+    fs.writeFile(subtitlePath, buffer.toString(), function (err, data) {
+      if (err) {
+        console.log(err)
+        return false
+      }
+
+      console.log('The file was saved!')
+      return true
     })
   }
 

@@ -1,14 +1,48 @@
-const subtitlesManager = require('../../src/open-subtitles/open-subtitles-manager')
+const assert = require('assert')
+const config = require('config')
 
-describe('subtitlesManager', function () {
-  const file = {
+const fileManager = require('../../src/file/file-manager')
+const fs = require('fs')
 
-  }
+describe('fileManager', function () {
+  describe('#getSubtitlePath', function () {
+    it('shoud return same path with `.srt` extension', function () {
+      const path = 'The.Affair.S03E05.WEBRip.XviD-FUM[ettv].avi'
 
-  describe('#buildHashBestSearchObject', function () {
-    it('parses file info and returns best possible OS hash', function () {
-      subtitlesManager.buildHashBestSearchObject()
-      assert.equal(true, false)
+      const pathCase = fileManager.getSubtitlePath(path)
+      assert.equal(pathCase, 'The.Affair.S03E05.WEBRip.XviD-FUM[ettv].srt')
+    })
+
+    it('shoud return same path with `.srt` extension, even if file name have spaces', function () {
+      const path = 'Manhunter 1986 720p BRRip x264-MgB.mkv'
+
+      const pathCase = fileManager.getSubtitlePath(path)
+      assert.equal(pathCase, 'Manhunter 1986 720p BRRip x264-MgB.srt')
+    })
+  })
+
+  describe('#hashFile', function () {
+    it('shoud return file hash', function () {
+      const path = config.get('test.tv_shows.dir') + 'The.Affair.S03E05.WEBRip.XviD-FUM[ettv].avi'
+
+      const hash = fileManager.hashFile(path)
+      assert.equal(hash, 'd41d8cd98f00b204e9800998ecf8427e')
+    })
+  })
+
+  describe('#writeFile', function () {
+    it('shoud write file to specified path', function () {
+      const newFilePath = config.get('test.tv_shows.dir') + 'The.Affair.S03E05.WEBRip.XviD-FUM[ettv]_new_file.srt'
+      const oldFilePath = config.get('test.tv_shows.dir') + 'The.Affair.S03E05.WEBRip.XviD-FUM[ettv].avi'
+
+      fs.readFile(oldFilePath, {encoding: 'utf-8'}, function (err, data) {
+        if (err) {
+          assert.ok(false)
+        } else {
+          const result = fileManager.writeFile(newFilePath, data)
+          assert.equal(true, result)
+        }
+      })
     })
   })
 })
