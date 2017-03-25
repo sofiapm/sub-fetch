@@ -16,18 +16,18 @@ const fileManager = require('../file/file-manager')
 
 class OpenSubtitlesManager {
 
-  search (file) {
-    console.log(file.path)
-    console.log('sdv :')
-    console.log(fileManager.hashFile(file.path))
+  search (file, callback) {
     const query = this.buildHashBestSearchObject(file, fileManager.hashFile(file.path))
 
     openSubtitles
             .search(query)
             .then(subtitles => {
-              this.processBestResponse(file.path, subtitles)
+              this.processBestResponse(file.path, subtitles, (error, data) => {
+                callback(error, file.name)
+              })
             }).catch((error) => {
               console.log(error)
+              callback(error, file.name)
             })
   }
 
@@ -48,11 +48,13 @@ class OpenSubtitlesManager {
     }
   }
 
-  processBestResponse (path, subtitles) {
+  processBestResponse (path, subtitles, callback) {
     if (subtitles['en']) {
       this.requestSubtitle(subtitles['en'].url, (error, data) => {
         if (!error) {
-          fileManager.writeFile(path, data)
+          fileManager.writeFile(path, data, (err, data) => {
+            callback(err, data)
+          })
         }
       })
     } else {

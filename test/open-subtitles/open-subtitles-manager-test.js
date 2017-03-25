@@ -31,16 +31,20 @@ describe('fileManager', function () {
   })
 
   describe('#writeFile', function () {
-    it('shoud write file to specified path', function () {
+    it('shoud write file to specified path', function (done) {
       const newFilePath = config.get('test.tv_shows.dir') + 'The.Affair.S03E05.WEBRip.XviD-FUM[ettv]_new_file.srt'
       const oldFilePath = config.get('test.tv_shows.dir') + 'The.Affair.S03E05.WEBRip.XviD-FUM[ettv].avi'
 
       fs.readFile(oldFilePath, {encoding: 'utf-8'}, function (err, data) {
         if (err) {
           assert.ok(false)
+          done(err)
         } else {
-          const result = fileManager.writeFile(newFilePath, data)
-          assert.equal(true, result)
+          fileManager.writeFile(newFilePath, data, (err, data) => {
+            assert.equal(undefined, err)
+
+            done()
+          })
         }
       })
     })
