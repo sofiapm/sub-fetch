@@ -2,8 +2,7 @@
  * Module dependencies.
  */
 
-const fs = require('fs');
-const config = require('config');
+const fs = require('fs')
 const md5File = require('md5-file')
 
 /**
@@ -12,38 +11,38 @@ const md5File = require('md5-file')
 
 class FileManager {
 
-    hashFile(path){
-        try{
-            return md5File.sync(path);
-        }catch(error){
-            console.log(error);
-        }
+  hashFile (path) {
+    try {
+      return md5File.sync(path)
+    } catch (error) {
+      console.log(error)
     }
+  }
 
-    writeFile(path, buffer){
-        const subtitlePath = this.getSubtitlePath(path);
-        console.log("Path: " + subtitlePath);
-        fs.writeFile(subtitlePath, buffer.toString(), function(err) {
-            return err ? 
-                console.log(err) :
-                console.log("The file was saved!");
-        }); 
-    }
+  writeFile (path, buffer) {
+    const subtitlePath = this.getSubtitlePath(path)
+    console.log('Path: ' + subtitlePath)
+    fs.writeFile(subtitlePath, buffer.toString(), function (err) {
+      return err
+                ? console.log(err)
+                : console.log('The file was saved!')
+    })
+  }
 
-    getSubtitlePath(path){
-        const extension = this.getExtension(path);
-        return path.split('.') 
-        .reverse() 
-        .join('.') 
-        .replace(extension, 'srt') 
-        .split('.') 
+  getSubtitlePath (path) {
+    const extension = this.getExtension(path)
+    return path.split('.')
         .reverse()
-        .join('.');
-    }
+        .join('.')
+        .replace(extension, 'srt')
+        .split('.')
+        .reverse()
+        .join('.')
+  }
 
-    getExtension(path){
-        return path.split('.').pop();
-    }
+  getExtension (path) {
+    return path.split('.').pop()
+  }
 }
 
-module.exports = new FileManager();
+module.exports = new FileManager()

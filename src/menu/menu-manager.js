@@ -4,7 +4,7 @@
 
 const { Menu } = require('electron')
 
-const menuTemplate = require('../menu/menu-template');
+const menuTemplate = require('../menu/menu-template')
 
 /**
  * Export `Menu Manager`.
@@ -12,10 +12,10 @@ const menuTemplate = require('../menu/menu-template');
 
 class MenuManager {
 
-    setMenu(){
-        const menu = Menu.buildFromTemplate(menuTemplate.template());
-        Menu.setApplicationMenu(menu);
-    }
+  setMenu () {
+    const menu = Menu.buildFromTemplate(menuTemplate.template())
+    Menu.setApplicationMenu(menu)
+  }
 }
 
-module.exports = new MenuManager();
+module.exports = new MenuManager()
