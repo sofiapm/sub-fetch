@@ -54,3 +54,14 @@ html {
 .drag-area:hover img {
     width: 60px;    
 }
+
+.results {
+    width: 100%;
+    color: #FF9B05;
+    font-size: 18px;   
+}
+
+.results img {
+    width: 20px;
+    background-color: #FF9B05;   
+}

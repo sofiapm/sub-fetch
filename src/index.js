@@ -2,7 +2,9 @@
 const subtitlesManager = require('../src/open-subtitles/open-subtitles-manager')
 
 const holder = document.getElementById('holder')
-const text = document.getElementById('text')
+const table = document.getElementById('sub-result')
+const check = '&#8730'
+const nocheck = '&#9747'
 
 holder.ondragover = ev => {
   ev.preventDefault()
@@ -15,9 +17,9 @@ holder.ondrop = ev => {
     console.log(ev.dataTransfer.files[i].path)
 
     subtitlesManager.search(ev.dataTransfer.files[i], (err, data) => {
-      if (!err) {
-        text.textContent += data + ' \n '
-      }
+      const row = table.insertRow(0)
+      row.insertCell(0).innerHTML = data
+      row.insertCell(1).innerHTML = !err ? check : nocheck
     })
   }
   ev.preventDefault()

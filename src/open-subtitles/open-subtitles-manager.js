@@ -58,7 +58,7 @@ class OpenSubtitlesManager {
         }
       })
     } else {
-      console.log('no subtitle found')
+      callback('No subtitle found.', path)
     }
   }
 
