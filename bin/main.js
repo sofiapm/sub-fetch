@@ -5,17 +5,11 @@
 const config = require('config');
 const electron = require('electron');
 
-const {app} = electron;
-const {BrowserWindow} = electron;
+const {app,BrowserWindow} = electron;
 
 const menu = require('../src/menu/menu-manager');
 
-/**
- * App init.
- */
-
-app.on('ready', () => {
-    
+function createWindow () {
     const win = new BrowserWindow({ width: 800, height: 600, resizable: false });
     
     win.loadURL(config.get('templates.main_window.dir'));
@@ -27,4 +21,18 @@ app.on('ready', () => {
     });
 
     menu.setMenu();
-});
+}
+
+/**
+ * App init.
+ */
+
+app.on('ready', createWindow);
+
+app.on('activate', () => {
+  // On macOS it's common to re-create a window in the app when the
+  // dock icon is clicked and there are no other windows open.
+  if (win === null) {
+    createWindow()
+  }
+})

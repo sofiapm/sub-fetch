@@ -1,0 +1,56 @@
+html, body, .container-fluid {
+  height: 100%;
+  background-color: #000;
+  color: #FF9B05;
+  font-family: 'Exo2Light', sans-serif;
+}
+
+html {
+  /* This allows the window to be dragged when the hidden-inset option is used */
+  -webkit-app-region: drag;
+}
+
+@font-face {
+    font-family: Exo2Light;
+    src: url(../../font/EXO_2_OTF/Exo2-Light.otf);
+}
+
+@font-face {
+    font-family: Exo2Medium;
+    src: url(../../font/EXO_2_OTF/Exo2-Medium.otf);
+}
+
+@font-face {
+    font-family: Exo2Regular;
+    src: url(../../font/EXO_2_OTF/Exo2-Regular.otf);
+}
+
+.title {
+    font-size: 45px;
+}
+
+.line {
+    background-color: #FF9B05;
+    width: 100%;
+    height: 2px;
+    margin-top: 10px; 
+    margin-bottom: 20px; 
+}
+
+.drag-area {
+    border-radius: 5px;
+    width:100%;
+    height:100px;
+    background-color: rgba(255, 188, 40, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.drag-area img {
+    width: 50px;    
+}
+
+.drag-area:hover img {
+    width: 60px;    
+}
