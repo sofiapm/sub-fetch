@@ -10,7 +10,7 @@ const {app,BrowserWindow} = electron;
 const menu = require('../src/menu/menu-manager');
 
 function createWindow () {
-    const win = new BrowserWindow({ width: 800, height: 600, resizable: false });
+    const win = new BrowserWindow({ minWidth: 500, maxWidth: 500, width: 500, height: 400 });
     
     win.loadURL(config.get('templates.main_window.dir'));
 

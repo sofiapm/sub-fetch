@@ -1,4 +1,5 @@
-html, body, .container-fluid {
+html, body {
+  overflow: hidden;
   height: 100%;
   background-color: #000;
   color: #FF9B05;
@@ -58,10 +59,5 @@ html {
 .results {
     width: 100%;
     color: #FF9B05;
-    font-size: 18px;   
-}
-
-.results img {
-    width: 20px;
-    background-color: #FF9B05;   
+    font-size: 14px;   
 }
