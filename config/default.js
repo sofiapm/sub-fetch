@@ -6,21 +6,18 @@
 module.exports = {
   assets: {
     bar_icon: {
-        dir: `file://${__dirname}/../assets/logo/logo.icns`
+      dir: `file://${__dirname}/../assets/logo/logo.icns`
     }
   },
   templates: {
     main_window: {
-        dir: `file://${__dirname}/../templates/index.html`
+      dir: `file://${__dirname}/../templates/index.html`
     }
   },
   scripts: {
     main_window: {
-        dir: `./${__dirname}/../src/index.js`
+      dir: `./${__dirname}/../src/index.js`
     }
-  },
-  open_subtitles: {
-      user_agent: 'OSTestUserAgentTemp'
   },
   test: {
     tv_shows: {
@@ -29,4 +26,4 @@ module.exports = {
   },
   uploads_dir: `${__dirname}/../uploads/`,
   version: '/v0'
-};
+}

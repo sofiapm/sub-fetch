@@ -2,13 +2,13 @@
  * Module dependencies.
  */
 
-const config = require('config')
 const OS = require('opensubtitles-api')
 const parser = require('episode-parser')
 const request = require('request')
-
-const openSubtitles = new OS(config.get('open_subtitles.user_agent'))
+const auth = require('../../config/auth.json')
+const openSubtitles = new OS(auth.user_agent)
 const fileManager = require('../file/file-manager')
+
 
 /**
  * Export `AbstractManager`.
