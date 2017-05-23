@@ -6,7 +6,7 @@ const OS = require('opensubtitles-api')
 const parser = require('episode-parser')
 const request = require('request')
 const auth = require('../../config/auth.json')
-const openSubtitles = new OS(auth.user_agent)
+const openSubtitles = new OS(auth.open_subtitles)
 const fileManager = require('../file/file-manager')
 
 
