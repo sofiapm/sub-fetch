@@ -12,6 +12,9 @@ module.exports = {
   templates: {
     main_window: {
       dir: `file://${__dirname}/../templates/index.html`
+    },
+    settings_window: {
+      dir: `file://${__dirname}/../templates/settings.html`
     }
   },
   scripts: {

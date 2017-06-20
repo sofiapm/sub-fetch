@@ -2,6 +2,9 @@
  * Module dependencies.
  */
 
+const config = require('config')
+const { BrowserWindow } = require('electron')
+
 /**
  * Export `Menu Template`.
  */
@@ -17,16 +20,23 @@ class MenuTemplate {
   }
 
   editTemplate () {
+    const self = this
+
     return {
       label: 'SubFetch',
       submenu: [
         {
-          role: 'about'
+          label: 'Settings',
+          role: 'settings',
+          click (menuItem, browserWindow, event) {
+            self.createSettingsWindow()
+          }
         },
         {
           type: 'separator'
         },
         {
+          label: 'Quit',
           role: 'quit'
         }
       ]
@@ -35,14 +45,21 @@ class MenuTemplate {
 
   helpTemplate () {
     return {
-      role: 'help',
+      label: 'About',
+      role: 'about',
       submenu: [
         {
           label: 'Learn More',
-          click () { require('electron').shell.openExternal('http://electron.atom.io') }
+          click () { require('electron').shell.openExternal('https://github.com/sofiapm/sub-fetch') }
         }
       ]
     }
+  }
+
+  createSettingsWindow () {
+    const settingsWindow = new BrowserWindow({ minWidth: 100, maxWidth: 400, width: 400, height: 400, show: true })
+    settingsWindow.loadURL(config.get('templates.settings_window.dir'))
+    return settingsWindow
   }
 }
 
