@@ -1,7 +1,8 @@
 const assert = require('assert')
 const config = require('config')
+const path = require('path')
 
-const fileManager = require('../../src/file/file-manager')
+const fileManager = require(path.resolve('src/file/file-manager'))
 const fs = require('fs')
 
 describe('fileManager', function () {

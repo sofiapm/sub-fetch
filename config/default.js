@@ -25,8 +25,12 @@ module.exports = {
   test: {
     tv_shows: {
       dir: `/${__dirname}/../test/fixtures/tv-shows/`
+    },
+    user_data: {
+      dir: `/${__dirname}/../test/fixtures/user-data/`
     }
   },
   uploads_dir: `${__dirname}/../uploads/`,
+  main_dir: `${__dirname}/../bin/main.js`,
   version: '/v0'
 }
