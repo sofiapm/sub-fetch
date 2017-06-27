@@ -2,12 +2,13 @@
  * Module dependencies.
  */
 
+const path = require('path')
 const config = require('config')
 const electron = require('electron')
 
 const { app, BrowserWindow, Menu } = electron
 
-const menuTemplate = require('../src/menu/menu-template')
+const menuTemplate = require(path.resolve('src/menu/menu-template'))
 
 let win = null
 
@@ -37,7 +38,7 @@ function createMainWindow () {
 
   win.loadURL(config.get('templates.main_window.dir'))
 
-  win.webContents.openDevTools()
+  //win.webContents.openDevTools()
 
   win.webContents.on('will-navigate', function (event, url) {
     event.preventDefault()

@@ -59,6 +59,7 @@ class MenuTemplate {
   createSettingsWindow () {
     const settingsWindow = new BrowserWindow({ minWidth: 100, maxWidth: 400, width: 400, height: 400, show: true })
     settingsWindow.loadURL(config.get('templates.settings_window.dir'))
+    settingsWindow.webContents.openDevTools()
     return settingsWindow
   }
 }
