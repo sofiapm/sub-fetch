@@ -3,14 +3,52 @@
 <head>
     <title>Sub Fetch</title>
 	<meta charset="UTF-8"/>
-      <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
     <div class="title">Settings</div>
     <div class="line"> </div>
-   
+    <div class='settings-login-form'>
+        <div class='settings-label'>
+            <label>
+                Username
+                <input id='username' name='username' placeholder="username" />    
+            </label>
+        </div>
+        <div class='settings-label'>
+            <label>
+                Password
+                <input id='password' name='password' placeholder="password" type="password" />
+            </label>
+        </div>
+
+        <button class='settings-button' id='login'> Login </button>
+        <button class='settings-button' id='logout'> Logout </button>
+    </div>  
+    <div class="simple-line"> </div>
+    <div class='settings-form'>
+        <div class='settings-label'>
+            <label>
+                Languages                
+                <select id="languages" type="text" multiple>
+                    <option value="en-en">en-en</option>
+                    <option value="pt-pt">pt-pt</option>
+                    <option value="pt-br">pt-br</option>
+                </select>
+            </label> 
+        </div>
+        <div class='settings-label'>
+            <label>
+                Watch for new subtitiles directory
+                <input id="sub-directory-input" disabled/>
+                <button id="sub-directory-btn" class="very-sweet-looking">Choose Directory</button>                
+            </label>
+        </div>
+        <button class='settings-button' id='save-settings'> Save </button>        
+    </div>   
     <script>
-        require('./../src/index.js');
+        require('./../src/settings/auth.js');
+        require('./../src/settings/settings.js');
     </script>
 </body>
 </html>
