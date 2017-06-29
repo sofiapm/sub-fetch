@@ -3,7 +3,7 @@
  */
 
 const path = require('path')
-const auth = require(path.resolve('config/auth.json'))
+const auth = require(path.resolve('db/auth.json'))
 
 const OS = require('opensubtitles-api')
 const openSubtitles = new OS(auth.open_subtitles)

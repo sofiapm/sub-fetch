@@ -9,7 +9,7 @@ const parser = require('episode-parser')
 const OS = require('opensubtitles-api')
 const openSubtitles = new OS(auth.open_subtitles)
 
-const auth = require(path.resolve('config/auth.json'))
+const auth = require(path.resolve('db/auth.json'))
 const fileManager = require(path.resolve('src/file/file-manager'))
 
 /**
