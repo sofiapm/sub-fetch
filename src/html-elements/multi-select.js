@@ -29,7 +29,7 @@ class MultipleSelectManager {
 
   addOptions (options) {
     for (var i = 0; i < options.length; i++) {
-      const option = this.createOption(stringHelper.lowercaseAllLetters(options[i]), stringHelper.capitalizeFirstLetters(options[i]))
+      const option = this.createOption(options[i].value, stringHelper.capitalizeFirstLetters(options[i].text))
       this.select.add(option)
     }
   }

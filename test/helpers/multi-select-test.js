@@ -24,9 +24,18 @@ describe('MultiSelect', function () {
       const multiSelect = new MultiSelect()
       const multiSelectCase = multiSelect.getSelect()
       const optionsCase = [
-        'English',
-        'portuguese',
-        'chinese'
+        {
+          text: 'English',
+          value: 'en'
+        },
+        {
+          text: 'portuguese',
+          value: 'pt'
+        },
+        {
+          text: 'chinese',
+          value: 'ch'
+        }
       ]
       multiSelect.addOptions(optionsCase)
 
