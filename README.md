@@ -5,8 +5,7 @@ Just drag and drop your tv-shows or movies files to yellow area.
 
 SubFetch will dowload subtitles and save them on same movie/tv-show directory for you.
 
-[logo]: https://github.com/sofiapm/sub-fetch/tree/develop/images/opensubtitles/logo-transparent.png "OS logo"
-Subtitles service powered by www.OpenSubtitles.org
+![](./images/opensubtitles/logo.gif =40x10) Subtitles service powered by www.OpenSubtitles.org
 
 ## Run App
 Run app locally.
