@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Sub Fetch</title>
+    <title>Sub Fetch - Settings</title>
 	<meta charset="UTF-8"/>
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/_settings.css">
 </head>
 <body>
     <div class="title">Settings</div>
@@ -12,7 +13,7 @@
         <div class='settings-label'>
             <label>
                 Username
-                <input id='username' name='username' placeholder="username" />    
+                <input id='username' name='username' placeholder="username" />
             </label>
         </div>
         <div class='settings-label'>
@@ -24,28 +25,24 @@
 
         <button class='settings-button' id='login'> Login </button>
         <button class='settings-button' id='logout'> Logout </button>
-    </div>  
+    </div>
     <div class="simple-line"> </div>
     <div class='settings-form'>
         <div class='settings-label'>
-            <label>
-                Languages                
-                <select id="languages" type="text" multiple>
-                    <option value="en-en">en-en</option>
-                    <option value="pt-pt">pt-pt</option>
-                    <option value="pt-br">pt-br</option>
-                </select>
-            </label> 
+            <label id='languages-select-label'>
+                Languages
+
+            </label>
         </div>
         <div class='settings-label'>
             <label>
                 Watch for new subtitiles directory
                 <input id="sub-directory-input" disabled/>
-                <button id="sub-directory-btn" class="very-sweet-looking">Choose Directory</button>                
+                <button id="sub-directory-btn" class="very-sweet-looking">Choose Directory</button>
             </label>
         </div>
-        <button class='settings-button' id='save-settings'> Save </button>        
-    </div>   
+        <button class='settings-button' id='save-settings'> Save </button>
+    </div>
     <script>
         require('./../src/settings/auth.js');
         require('./../src/settings/settings.js');
