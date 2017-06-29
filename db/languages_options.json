@@ -1,0 +1,2387 @@
+[
+  {
+
+    "value": "aa",
+    "text": "Afar, afar"
+  },
+  {
+
+    "value": "ab",
+    "text": "Abkhazian"
+  },
+  {
+
+    "value": "",
+    "text": "Achinese"
+  },
+  {
+
+    "value": "",
+    "text": "Acoli"
+  },
+  {
+
+    "value": "",
+    "text": "Adangme"
+  },
+  {
+
+    "value": "",
+    "text": "adyghé"
+  },
+  {
+
+    "value": "",
+    "text": "Afro-Asiatic (Other)"
+  },
+  {
+
+    "value": "",
+    "text": "Afrihili"  
+  },
+  {
+
+    "value": "af",
+    "text": "Afrikaans"
+  },
+  {
+
+    "value": "",
+    "text": "Ainu"
+  },
+  {
+
+    "value": "ak",
+    "text": "Akan"
+  },
+  {
+
+    "value": "",
+    "text": "Akkadian"
+  },
+  {
+
+    "value": "sq",
+    "text": "Albanian"
+  },
+  {
+
+    "value": "",
+    "text": "Aleut"
+  },
+  {
+
+    "value": "",
+    "text": "Algonquian languages"
+  },
+  {
+
+    "value": "",
+    "text": "Southern Altai"
+  },
+  {
+
+    "value": "am",
+    "text": "Amharic"
+  },
+  {
+
+    "value": "",
+    "text": "English, Old (ca.450-1100)"
+  },
+  {
+
+    "value": "",
+    "text": "Apache languages"
+  },
+  {
+
+    "value": "ar",
+    "text": "Arabic"
+  },
+  {
+
+    "value": "",
+    "text": "Aramaic"
+  },
+  {
+
+    "value": "an",
+    "text": "Aragonese"
+  },
+  {
+
+    "value": "hy",
+    "text": "Armenian"
+  },
+  {
+
+    "value": "",
+    "text": "Araucanian"
+  },
+  {
+
+    "value": "",
+    "text": "Arapaho"
+  },
+  {
+
+    "value": "",
+    "text": "Artificial (Other)"
+  },
+  {
+
+    "value": "",
+    "text": "Arawak"
+  },
+  {
+
+    "value": "as",
+    "text": "Assamese"
+  },
+  {
+
+    "value": "at",
+    "text": "Asturian"
+  },
+  {
+
+    "value": "",
+    "text": "Athapascan languages"
+  },
+  {
+
+    "value": "",
+    "text": "Australian languages"
+  },
+  {
+
+    "value": "av",
+    "text": "Avaric"
+  },
+  {
+
+    "value": "ae",
+    "text": "Avestan"
+  },
+  {
+
+    "value": "",
+    "text": "Awadhi"
+  },
+  {
+
+    "value": "ay",
+    "text": "Aymara"
+  },
+  {
+
+    "value": "az",
+    "text": "Azerbaijani"
+  },
+  {
+
+    "value": "",
+    "text": "Banda"
+  },
+  {
+
+    "value": "",
+    "text": "Bamileke languages"
+  },
+  {
+
+    "value": "ba",
+    "text": "Bashkir"
+  },
+  {
+
+    "value": "",
+    "text": "Baluchi"
+  },
+  {
+
+    "value": "bm",
+    "text": "Bambara"
+  },
+  {
+
+    "value": "",
+    "text": "Balinese"
+  },
+  {
+
+    "value": "eu",
+    "text": "Basque"
+  },
+  {
+
+    "value": "",
+    "text": "Basa"
+  },
+  {
+
+    "value": "",
+    "text": "Baltic (Other)"
+  },
+  {
+
+    "value": "",
+    "text": "Beja"
+  },
+  {
+
+    "value": "be",
+    "text": "Belarusian"
+  },
+  {
+
+    "value": "",
+    "text": "Bemba"
+  },
+  {
+
+    "value": "bn",
+    "text": "Bengali"
+  },
+  {
+
+    "value": "",
+    "text": "Berber (Other)"
+  },
+  {
+
+    "value": "",
+    "text": "Bhojpuri"
+  },
+  {
+
+    "value": "bh",
+    "text": "Bihari"
+  },
+  {
+
+    "value": "",
+    "text": "Bikol"
+  },
+  {
+
+    "value": "",
+    "text": "Bini"
+  },
+  {
+
+    "value": "bi",
+    "text": "Bislama"
+  },
+  {
+
+    "value": "",
+    "text": "Siksika"
+  },
+  {
+
+    "value": "",
+    "text": "Bantu (Other)"
+  },
+  {
+
+    "value": "bs",
+    "text": "Bosnian"
+  },
+  {
+
+    "value": "",
+    "text": "Braj"
+  },
+  {
+
+    "value": "br",
+    "text": "Breton"
+  },
+  {
+
+    "value": "",
+    "text": "Batak (Indonesia)"
+  },
+  {
+
+    "value": "",
+    "text": "Buriat"
+  },
+  {
+
+    "value": "",
+    "text": "Buginese"
+  },
+  {
+
+    "value": "bg",
+    "text": "Bulgarian"
+  },
+  {
+
+    "value": "my",
+    "text": "Burmese"
+  },
+  {
+
+    "value": "",
+    "text": "Blin"
+  },
+  {
+
+    "value": "",
+    "text": "Caddo"
+  },
+  {
+
+    "value": "",
+    "text": "Central American Indian (Other)"
+  },
+  {
+
+    "value": "",
+    "text": "Carib"
+  },
+  {
+
+    "value": "ca",
+    "text": "Catalan"
+  },
+  {
+
+    "value": "",
+    "text": "Caucasian (Other)"
+  },
+  {
+
+    "value": "",
+    "text": "Cebuano"
+  },
+  {
+
+    "value": "",
+    "text": "Celtic (Other)"
+  },
+  {
+
+    "value": "ch",
+    "text": "Chamorro"
+  },
+  {
+
+    "value": "",
+    "text": "Chibcha"
+  },
+  {
+
+    "value": "ce",
+    "text": "Chechen"
+  },
+  {
+
+    "value": "",
+    "text": "Chagatai"
+  },
+  {
+
+    "value": "zh",
+    "text": "Chinese (simplified)"
+  },
+  {
+
+    "value": "",
+    "text": "Chuukese"
+  },
+  {
+
+    "value": "",
+    "text": "Mari"
+  },
+  {
+
+    "value": "",
+    "text": "Chinook jargon"
+  },
+  {
+
+    "value": "",
+    "text": "Choctaw"
+  },
+  {
+
+    "value": "",
+    "text": "Chipewyan"
+  },
+  {
+
+    "value": "",
+    "text": "Cherokee"
+  },
+  {
+
+    "value": "cu",
+    "text": "Church Slavic"
+  },
+  {
+
+    "value": "cv",
+    "text": "Chuvash"
+  },
+  {
+
+    "value": "",
+    "text": "Cheyenne"
+  },
+  {
+
+    "value": "",
+    "text": "Chamic languages"
+  },
+  {
+
+    "value": "",
+    "text": "Coptic"
+  },
+  {
+
+    "value": "kw",
+    "text": "Cornish"
+  },
+  {
+
+    "value": "co",
+    "text": "Corsican"
+  },
+  {
+
+    "value": "",
+    "text": "Creoles and pidgins, English based (Other)"
+  },
+  {
+
+    "value": "",
+    "text": "Creoles and pidgins, French-based (Other)"
+  },
+  {
+
+    "value": "",
+    "text": "Creoles and pidgins, Portuguese-based (Other)"
+  },
+  {
+
+    "value": "cr",
+    "text": "Cree"
+  },
+  {
+
+    "value": "",
+    "text": "Crimean Tatar"
+  },
+  {
+
+    "value": "",
+    "text": "Creoles and pidgins (Other)"
+  },
+  {
+
+    "value": "",
+    "text": "Kashubian"
+  },
+  {
+
+    "value": "",
+    "text": "Cushitic (Other)' couchitiques, autres langues"
+  },
+  {
+
+    "value": "cs",
+    "text": "Czech"
+  },
+  {
+
+    "value": "",
+    "text": "Dakota"
+  },
+  {
+
+    "value": "da",
+    "text": "Danish"
+  },
+  {
+
+    "value": "",
+    "text": "Dargwa"
+  },
+  {
+
+    "value": "",
+    "text": "Dayak"
+  },
+  {
+
+    "value": "",
+    "text": "Delaware"
+  },
+  {
+
+    "value": "",
+    "text": "Slave (Athapascan)"
+  },
+  {
+
+    "value": "",
+    "text": "Dogrib"
+  },
+  {
+
+    "value": "",
+    "text": "Dinka"
+  },
+  {
+
+    "value": "dv",
+    "text": "Divehi"
+  },
+  {
+
+    "value": "",
+    "text": "Dogri"
+  },
+  {
+
+    "value": "",
+    "text": "Dravidian (Other)"
+  },
+  {
+
+    "value": "",
+    "text": "Duala"
+  },
+  {
+
+    "value": "",
+    "text": "Dutch, Middle (ca.1050-1350)"
+  },
+  {
+
+    "value": "nl",
+    "text": "Dutch"
+  },
+  {
+
+    "value": "",
+    "text": "Dyula"
+  },
+  {
+
+    "value": "dz",
+    "text": "Dzongkha"
+  },
+  {
+
+    "value": "",
+    "text": "Efik"
+  },
+  {
+
+    "value": "",
+    "text": "Egyptian (Ancient)"
+  },
+  {
+
+    "value": "",
+    "text": "Ekajuk"
+  },
+  {
+
+    "value": "",
+    "text": "Elamite"
+  },
+  {
+
+    "value": "en",
+    "text": "English"
+  },
+  {
+
+    "value": "",
+    "text": "English, Middle (1100-1500)"
+  },
+  {
+
+    "value": "eo",
+    "text": "Esperanto"
+  },
+  {
+
+    "value": "et",
+    "text": "Estonian"
+  },
+  {
+
+    "value": "ee",
+    "text": "Ewe"
+  },
+  {
+
+    "value": "",
+    "text": "Ewondo"
+  },
+  {
+
+    "value": "",
+    "text": "Fang"
+  },
+  {
+
+    "value": "fo",
+    "text": "Faroese"
+  },
+  {
+
+    "value": "",
+    "text": "Fanti"
+  },
+  {
+
+    "value": "fj",
+    "text": "Fijian"
+  },
+  {
+
+    "value": "",
+    "text": "Filipino"
+  },
+  {
+
+    "value": "fi",
+    "text": "Finnish"
+  },
+  {
+
+    "value": "",
+    "text": "Finno-Ugrian (Other)"
+  },
+  {
+
+    "value": "",
+    "text": "Fon"
+  },
+  {
+
+    "value": "fr",
+    "text": "French"
+  },
+  {
+
+    "value": "",
+    "text": "French, Middle (ca.1400-1600)"
+  },
+  {
+
+    "value": "",
+    "text": "French, Old (842-ca.1400)"
+  },
+  {
+
+    "value": "fy",
+    "text": "Frisian"
+  },
+  {
+
+    "value": "ff",
+    "text": "Fulah"
+  },
+  {
+
+    "value": "",
+    "text": "Friulian"
+  },
+  {
+
+    "value": "",
+    "text": "Ga"
+  },
+  {
+
+    "value": "",
+    "text": "Gayo"
+  },
+  {
+
+    "value": "",
+    "text": "Gbaya"
+  },
+  {
+
+    "value": "",
+    "text": "Germanic (Other)"
+  },
+  {
+
+    "value": "ka",
+    "text": "Georgian"
+  },
+  {
+
+    "value": "de",
+    "text": "German"
+  },
+  {
+
+    "value": "",
+    "text": "Geez"
+  },
+  {
+
+    "value": "",
+    "text": "Gilbertese"
+  },
+  {
+
+    "value": "gd",
+    "text": "Gaelic"
+  },
+  {
+
+    "value": "ga",
+    "text": "Irish"
+  },
+  {
+
+    "value": "gl",
+    "text": "Galician"
+  },
+  {
+
+    "value": "gv",
+    "text": "Manx"
+  },
+  {
+
+    "value": "",
+    "text": "German, Middle High (ca.1050-1500)"
+  },
+  {
+
+    "value": "",
+    "text": "German, Old High (ca.750-1050)"
+  },
+  {
+
+    "value": "",
+    "text": "Gondi"
+  },
+  {
+
+    "value": "",
+    "text": "Gorontalo"
+  },
+  {
+
+    "value": "",
+    "text": "Gothic"
+  },
+  {
+
+    "value": "",
+    "text": "Grebo"
+  },
+  {
+
+    "value": "",
+    "text": "Greek, Ancient (to 1453)"
+  },
+  {
+
+    "value": "el",
+    "text": "Greek"
+  },
+  {
+
+    "value": "gn",
+    "text": "Guarani"
+  },
+  {
+
+    "value": "gu",
+    "text": "Gujarati"
+  },
+  {
+
+    "value": "",
+    "text": "Gwich´in"
+  },
+  {
+
+    "value": "",
+    "text": "Haida"
+  },
+  {
+
+    "value": "ht",
+    "text": "Haitian"
+  },
+  {
+
+    "value": "ha",
+    "text": "Hausa"
+  },
+  {
+
+    "value": "",
+    "text": "Hawaiian"
+  },
+  {
+
+    "value": "he",
+    "text": "Hebrew"
+  },
+  {
+
+    "value": "hz",
+    "text": "Herero"
+  },
+  {
+
+    "value": "",
+    "text": "Hiligaynon"
+  },
+  {
+
+    "value": "",
+    "text": "Himachali"
+  },
+  {
+
+    "value": "hi",
+    "text": "Hindi"
+  },
+  {
+
+    "value": "",
+    "text": "Hittite"
+  },
+  {
+
+    "value": "",
+    "text": "Hmong"
+  },
+  {
+
+    "value": "ho",
+    "text": "Hiri Motu"
+  },
+  {
+
+    "value": "hr",
+    "text": "Croatian"
+  },
+  {
+
+    "value": "hu",
+    "text": "Hungarian"
+  },
+  {
+
+    "value": "",
+    "text": "Hupa"
+  },
+  {
+
+    "value": "",
+    "text": "Iban"
+  },
+  {
+
+    "value": "ig",
+    "text": "Igbo"
+  },
+  {
+
+    "value": "is",
+    "text": "Icelandic"
+  },
+  {
+
+    "value": "io",
+    "text": "Ido"
+  },
+  {
+
+    "value": "ii",
+    "text": "Sichuan Yi"
+  },
+  {
+
+    "value": "",
+    "text": "Ijo"
+  },
+  {
+
+    "value": "iu",
+    "text": "Inuktitut"
+  },
+  {
+
+    "value": "ie",
+    "text": "Interlingue"
+  },
+  {
+
+    "value": "",
+    "text": "Iloko"
+  },
+  {
+
+    "value": "ia",
+    "text": "Interlingua (International Auxiliary Language Asso"
+  },
+  {
+
+    "value": "",
+    "text": "Indic (Other)"
+  },
+  {
+
+    "value": "id",
+    "text": "Indonesian"
+  },
+  {
+
+    "value": "",
+    "text": "Indo-European (Other)"
+  },
+  {
+
+    "value": "",
+    "text": "Ingush"
+  },
+  {
+
+    "value": "ik",
+    "text": "Inupiaq"
+  },
+  {
+
+    "value": "",
+    "text": "Iranian (Other)"
+  },
+  {
+
+    "value": "",
+    "text": "Iroquoian languages"
+  },
+  {
+
+    "value": "it",
+    "text": "Italian"
+  },
+  {
+
+    "value": "jv",
+    "text": "Javanese"
+  },
+  {
+
+    "value": "ja",
+    "text": "Japanese"
+  },
+  {
+
+    "value": "",
+    "text": "Judeo-Persian"
+  },
+  {
+
+    "value": "",
+    "text": "Judeo-Arabic"
+  },
+  {
+
+    "value": "",
+    "text": "Kara-Kalpak"
+  },
+  {
+
+    "value": "",
+    "text": "Kabyle"
+  },
+  {
+
+    "value": "",
+    "text": "Kachin"
+  },
+  {
+
+    "value": "kl",
+    "text": "Kalaallisut"
+  },
+  {
+
+    "value": "",
+    "text": "Kamba"
+  },
+  {
+
+    "value": "kn",
+    "text": "Kannada"
+  },
+  {
+
+    "value": "",
+    "text": "Karen"
+  },
+  {
+
+    "value": "ks",
+    "text": "Kashmiri"
+  },
+  {
+
+    "value": "kr",
+    "text": "Kanuri"
+  },
+  {
+
+    "value": "",
+    "text": "Kawi"
+  },
+  {
+
+    "value": "kk",
+    "text": "Kazakh"
+  },
+  {
+
+    "value": "",
+    "text": "Kabardian"
+  },
+  {
+
+    "value": "",
+    "text": "Khasi"
+  },
+  {
+
+    "value": "",
+    "text": "Khoisan (Other)"
+  },
+  {
+
+    "value": "km",
+    "text": "Khmer"
+  },
+  {
+
+    "value": "",
+    "text": "Khotanese"
+  },
+  {
+
+    "value": "ki",
+    "text": "Kikuyu"
+  },
+  {
+
+    "value": "rw",
+    "text": "Kinyarwanda"
+  },
+  {
+
+    "value": "ky",
+    "text": "Kirghiz"
+  },
+  {
+
+    "value": "",
+    "text": "Kimbundu"
+  },
+  {
+
+    "value": "",
+    "text": "Konkani"
+  },
+  {
+
+    "value": "kv",
+    "text": "Komi"
+  },
+  {
+
+    "value": "kg",
+    "text": "Kongo"
+  },
+  {
+
+    "value": "ko",
+    "text": "Korean"
+  },
+  {
+
+    "value": "",
+    "text": "Kosraean"
+  },
+  {
+
+    "value": "",
+    "text": "Kpelle"
+  },
+  {
+
+    "value": "",
+    "text": "Karachay-Balkar"
+  },
+  {
+
+    "value": "",
+    "text": "Kru"
+  },
+  {
+
+    "value": "",
+    "text": "Kurukh"
+  },
+  {
+
+    "value": "kj",
+    "text": "Kuanyama"
+  },
+  {
+
+    "value": "",
+    "text": "Kumyk"
+  },
+  {
+
+    "value": "ku",
+    "text": "Kurdish"
+  },
+  {
+
+    "value": "",
+    "text": "Kutenai"
+  },
+  {
+
+    "value": "",
+    "text": "Ladino"
+  },
+  {
+
+    "value": "",
+    "text": "Lahnda"
+  },
+  {
+
+    "value": "",
+    "text": "Lamba"
+  },
+  {
+
+    "value": "lo",
+    "text": "Lao"
+  },
+  {
+
+    "value": "la",
+    "text": "Latin"
+  },
+  {
+
+    "value": "lv",
+    "text": "Latvian"
+  },
+  {
+
+    "value": "",
+    "text": "Lezghian"
+  },
+  {
+
+    "value": "li",
+    "text": "Limburgan"
+  },
+  {
+
+    "value": "ln",
+    "text": "Lingala"
+  },
+  {
+
+    "value": "lt",
+    "text": "Lithuanian"
+  },
+  {
+
+    "value": "",
+    "text": "Mongo"
+  },
+  {
+
+    "value": "",
+    "text": "Lozi"
+  },
+  {
+
+    "value": "lb",
+    "text": "Luxembourgish"
+  },
+  {
+
+    "value": "",
+    "text": "Luba-Lulua"
+  },
+  {
+
+    "value": "lu",
+    "text": "Luba-Katanga"
+  },
+  {
+
+    "value": "lg",
+    "text": "Ganda"
+  },
+  {
+
+    "value": "",
+    "text": "Luiseno"
+  },
+  {
+
+    "value": "",
+    "text": "Lunda"
+  },
+  {
+
+    "value": "",
+    "text": "Luo (Kenya and Tanzania)"
+  },
+  {
+
+    "value": "",
+    "text": "lushai"
+  },
+  {
+
+    "value": "mk",
+    "text": "Macedonian"
+  },
+  {
+
+    "value": "",
+    "text": "Madurese"
+  },
+  {
+
+    "value": "",
+    "text": "Magahi"
+  },
+  {
+
+    "value": "mh",
+    "text": "Marshallese"
+  },
+  {
+
+    "value": "",
+    "text": "Maithili"
+  },
+  {
+
+    "value": "",
+    "text": "Makasar"
+  },
+  {
+
+    "value": "ml",
+    "text": "Malayalam"
+  },
+  {
+
+    "value": "",
+    "text": "Mandingo"
+  },
+  {
+
+    "value": "mi",
+    "text": "Maori"
+  },
+  {
+
+    "value": "",
+    "text": "Austronesian (Other)"
+  },
+  {
+
+    "value": "mr",
+    "text": "Marathi"
+  },
+  {
+
+    "value": "",
+    "text": "Masai"
+  },
+  {
+
+    "value": "ms",
+    "text": "Malay"
+  },
+  {
+
+    "value": "",
+    "text": "Moksha"
+  },
+  {
+
+    "value": "",
+    "text": "Mandar"
+  },
+  {
+
+    "value": "",
+    "text": "Mende"
+  },
+  {
+
+    "value": "",
+    "text": "Irish, Middle (900-1200)"
+  },
+  {
+
+    "value": "",
+    "text": "Mi'kmaq"
+  },
+  {
+
+    "value": "",
+    "text": "Minangkabau"
+  },
+  {
+
+    "value": "",
+    "text": "Miscellaneous languages"
+  },
+  {
+
+    "value": "",
+    "text": "Mon-Khmer (Other)"
+  },
+  {
+
+    "value": "mg",
+    "text": "Malagasy"
+  },
+  {
+
+    "value": "mt",
+    "text": "Maltese"
+  },
+  {
+
+    "value": "",
+    "text": "Manchu"
+  },
+  {
+
+    "value": "ma",
+    "text": "Manipuri"
+  },
+  {
+
+    "value": "",
+    "text": "Manobo languages"
+  },
+  {
+
+    "value": "",
+    "text": "Mohawk"
+  },
+  {
+
+    "value": "mo",
+    "text": "Moldavian"
+  },
+  {
+
+    "value": "mn",
+    "text": "Mongolian"
+  },
+  {
+
+    "value": "",
+    "text": "Mossi"
+  },
+  {
+
+    "value": "",
+    "text": "Mirandese"
+  },
+  {
+
+    "value": "",
+    "text": "Multiple languages"
+  },
+  {
+
+    "value": "",
+    "text": "Munda languages"
+  },
+  {
+
+    "value": "",
+    "text": "Creek"
+  },
+  {
+
+    "value": "",
+    "text": "Marwari"
+  },
+  {
+
+    "value": "",
+    "text": "Mayan languages"
+  },
+  {
+
+    "value": "",
+    "text": "Erzya"
+  },
+  {
+
+    "value": "",
+    "text": "Nahuatl"
+  },
+  {
+
+    "value": "",
+    "text": "North American Indian"
+  },
+  {
+
+    "value": "",
+    "text": "Neapolitan"
+  },
+  {
+
+    "value": "na",
+    "text": "Nauru"
+  },
+  {
+
+    "value": "nv",
+    "text": "Navajo"
+  },
+  {
+
+    "value": "nr",
+    "text": "Ndebele, South"
+  },
+  {
+
+    "value": "nd",
+    "text": "Ndebele, North"
+  },
+  {
+
+    "value": "ng",
+    "text": "Ndonga"
+  },
+  {
+
+    "value": "",
+    "text": "Low German"
+  },
+  {
+
+    "value": "ne",
+    "text": "Nepali"
+  },
+  {
+
+    "value": "",
+    "text": "Nepal Bhasa"
+  },
+  {
+
+    "value": "",
+    "text": "Nias"
+  },
+  {
+
+    "value": "",
+    "text": "Niger-Kordofanian (Other)"
+  },
+  {
+
+    "value": "",
+    "text": "Niuean"
+  },
+  {
+
+    "value": "nn",
+    "text": "Norwegian Nynorsk"
+  },
+  {
+
+    "value": "nb",
+    "text": "Norwegian Bokmal"
+  },
+  {
+
+    "value": "",
+    "text": "Nogai"
+  },
+  {
+
+    "value": "",
+    "text": "Norse, Old"
+  },
+  {
+
+    "value": "no",
+    "text": "Norwegian"
+  },
+  {
+
+    "value": "",
+    "text": "Northern Sotho"
+  },
+  {
+
+    "value": "",
+    "text": "Nubian languages"
+  },
+  {
+
+    "value": "",
+    "text": "Classical Newari"
+  },
+  {
+
+    "value": "ny",
+    "text": "Chichewa"
+  },
+  {
+
+    "value": "",
+    "text": "Nyamwezi"
+  },
+  {
+
+    "value": "",
+    "text": "Nyankole"
+  },
+  {
+
+    "value": "",
+    "text": "Nyoro"
+  },
+  {
+
+    "value": "",
+    "text": "Nzima"
+  },
+  {
+
+    "value": "oc",
+    "text": "Occitan"
+  },
+  {
+
+    "value": "oj",
+    "text": "Ojibwa"
+  },
+  {
+
+    "value": "or",
+    "text": "Oriya"
+  },
+  {
+
+    "value": "om",
+    "text": "Oromo"
+  },
+  {
+
+    "value": "",
+    "text": "Osage"
+  },
+  {
+
+    "value": "os",
+    "text": "Ossetian"
+  },
+  {
+
+    "value": "",
+    "text": "Turkish, Ottoman (1500-1928)"
+  },
+  {
+
+    "value": "",
+    "text": "Otomian languages"
+  },
+  {
+
+    "value": "",
+    "text": "Papuan (Other)"
+  },
+  {
+
+    "value": "",
+    "text": "Pangasinan"
+  },
+  {
+
+    "value": "",
+    "text": "Pahlavi"
+  },
+  {
+
+    "value": "",
+    "text": "Pampanga"
+  },
+  {
+
+    "value": "pa",
+    "text": "Panjabi"
+  },
+  {
+
+    "value": "",
+    "text": "Papiamento"
+  },
+  {
+
+    "value": "",
+    "text": "Palauan"
+  },
+  {
+
+    "value": "",
+    "text": "Persian, Old (ca.600-400 B.C.)"
+  },
+  {
+
+    "value": "fa",
+    "text": "Persian"
+  },
+  {
+
+    "value": "",
+    "text": "Philippine (Other)"
+  },
+  {
+
+    "value": "",
+    "text": "Phoenician"
+  },
+  {
+
+    "value": "pi",
+    "text": "Pali"
+  },
+  {
+
+    "value": "pl",
+    "text": "Polish"
+  },
+  {
+
+    "value": "",
+    "text": "Pohnpeian"
+  },
+  {
+
+    "value": "pt",
+    "text": "Portuguese"
+  },
+  {
+
+    "value": "",
+    "text": "Prakrit languages"
+  },
+  {
+
+    "value": "",
+    "text": "Provençal, Old (to 1500)"
+  },
+  {
+
+    "value": "ps",
+    "text": "Pushto"
+  },
+  {
+
+    "value": "qu",
+    "text": "Quechua"
+  },
+  {
+
+    "value": "",
+    "text": "Rajasthani"
+  },
+  {
+
+    "value": "",
+    "text": "Rapanui"
+  },
+  {
+
+    "value": "",
+    "text": "Rarotongan"
+  },
+  {
+
+    "value": "",
+    "text": "Romance (Other)"
+  },
+  {
+
+    "value": "rm",
+    "text": "Raeto-Romance"
+  },
+  {
+
+    "value": "",
+    "text": "Romany"
+  },
+  {
+
+    "value": "rn",
+    "text": "Rundi"
+  },
+  {
+
+    "value": "",
+    "text": "Aromanian"
+  },
+  {
+
+    "value": "ru",
+    "text": "Russian"
+  },
+  {
+
+    "value": "",
+    "text": "Sandawe"
+  },
+  {
+
+    "value": "sg",
+    "text": "Sango"
+  },
+  {
+
+    "value": "",
+    "text": "Yakut"
+  },
+  {
+
+    "value": "",
+    "text": "South American Indian (Other)"
+  },
+  {
+
+    "value": "",
+    "text": "Salishan languages"
+  },
+  {
+
+    "value": "",
+    "text": "Samaritan Aramaic"
+  },
+  {
+
+    "value": "sa",
+    "text": "Sanskrit"
+  },
+  {
+
+    "value": "",
+    "text": "Sasak"
+  },
+  {
+
+    "value": "",
+    "text": "Santali"
+  },
+  {
+
+    "value": "sr",
+    "text": "Serbian"
+  },
+  {
+
+    "value": "",
+    "text": "Sicilian"
+  },
+  {
+
+    "value": "",
+    "text": "Scots"
+  },
+  {
+
+    "value": "",
+    "text": "Selkup"
+  },
+  {
+
+    "value": "",
+    "text": "Semitic (Other)"
+  },
+  {
+
+    "value": "",
+    "text": "Irish, Old (to 900)"
+  },
+  {
+
+    "value": "",
+    "text": "Sign Languages"
+  },
+  {
+
+    "value": "",
+    "text": "Shan"
+  },
+  {
+
+    "value": "",
+    "text": "Sidamo"
+  },
+  {
+
+    "value": "si",
+    "text": "Sinhalese"
+  },
+  {
+
+    "value": "",
+    "text": "Siouan languages"
+  },
+  {
+
+    "value": "",
+    "text": "Sino-Tibetan (Other)"
+  },
+  {
+
+    "value": "",
+    "text": "Slavic (Other)"
+  },
+  {
+
+    "value": "sk",
+    "text": "Slovak"
+  },
+  {
+
+    "value": "sl",
+    "text": "Slovenian"
+  },
+  {
+
+    "value": "",
+    "text": "Southern Sami"
+  },
+  {
+
+    "value": "se",
+    "text": "Northern Sami"
+  },
+  {
+
+    "value": "",
+    "text": "Sami languages (Other)"
+  },
+  {
+
+    "value": "",
+    "text": "Lule Sami"
+  },
+  {
+
+    "value": "",
+    "text": "Inari Sami"
+  },
+  {
+
+    "value": "sm",
+    "text": "Samoan"
+  },
+  {
+
+    "value": "",
+    "text": "Skolt Sami"
+  },
+  {
+
+    "value": "sn",
+    "text": "Shona"
+  },
+  {
+
+    "value": "sd",
+    "text": "Sindhi"
+  },
+  {
+
+    "value": "",
+    "text": "Soninke"
+  },
+  {
+
+    "value": "",
+    "text": "Sogdian"
+  },
+  {
+
+    "value": "so",
+    "text": "Somali"
+  },
+  {
+
+    "value": "",
+    "text": "Songhai"
+  },
+  {
+
+    "value": "st",
+    "text": "Sotho, Southern"
+  },
+  {
+
+    "value": "es",
+    "text": "Spanish"
+  },
+  {
+
+    "value": "sc",
+    "text": "Sardinian"
+  },
+  {
+
+    "value": "",
+    "text": "Serer"
+  },
+  {
+
+    "value": "",
+    "text": "Nilo-Saharan (Other)"
+  },
+  {
+
+    "value": "ss",
+    "text": "Swati"
+  },
+  {
+
+    "value": "",
+    "text": "Sukuma"
+  },
+  {
+
+    "value": "su",
+    "text": "Sundanese"
+  },
+  {
+
+    "value": "",
+    "text": "Susu"
+  },
+  {
+
+    "value": "",
+    "text": "Sumerian"
+  },
+  {
+
+    "value": "sw",
+    "text": "Swahili"
+  },
+  {
+
+    "value": "sv",
+    "text": "Swedish"
+  },
+  {
+
+    "value": "sy",
+    "text": "Syriac"
+  },
+  {
+
+    "value": "ty",
+    "text": "Tahitian"
+  },
+  {
+
+    "value": "",
+    "text": "Tai (Other)"
+  },
+  {
+
+    "value": "ta",
+    "text": "Tamil"
+  },
+  {
+
+    "value": "tt",
+    "text": "Tatar"
+  },
+  {
+
+    "value": "te",
+    "text": "Telugu"
+  },
+  {
+
+    "value": "",
+    "text": "Timne"
+  },
+  {
+
+    "value": "",
+    "text": "Tereno"
+  },
+  {
+
+    "value": "",
+    "text": "Tetum"
+  },
+  {
+
+    "value": "tg",
+    "text": "Tajik"
+  },
+  {
+
+    "value": "tl",
+    "text": "Tagalog"
+  },
+  {
+
+    "value": "th",
+    "text": "Thai"
+  },
+  {
+
+    "value": "bo",
+    "text": "Tibetan"
+  },
+  {
+
+    "value": "",
+    "text": "Tigre"
+  },
+  {
+
+    "value": "ti",
+    "text": "Tigrinya"
+  },
+  {
+
+    "value": "",
+    "text": "Tiv"
+  },
+  {
+
+    "value": "",
+    "text": "Tokelau"
+  },
+  {
+
+    "value": "",
+    "text": "Klingon"
+  },
+  {
+
+    "value": "",
+    "text": "Tlingit"
+  },
+  {
+
+    "value": "",
+    "text": "Tamashek"
+  },
+  {
+
+    "value": "",
+    "text": "Tonga (Nyasa)"
+  },
+  {
+
+    "value": "to",
+    "text": "Tonga (Tonga Islands)"
+  },
+  {
+
+    "value": "",
+    "text": "Tok Pisin"
+  },
+  {
+
+    "value": "",
+    "text": "Tsimshian"
+  },
+  {
+
+    "value": "tn",
+    "text": "Tswana"
+  },
+  {
+
+    "value": "ts",
+    "text": "Tsonga"
+  },
+  {
+
+    "value": "tk",
+    "text": "Turkmen"
+  },
+  {
+
+    "value": "",
+    "text": "Tumbuka"
+  },
+  {
+
+    "value": "",
+    "text": "Tupi languages"
+  },
+  {
+
+    "value": "tr",
+    "text": "Turkish"
+  },
+  {
+
+    "value": "",
+    "text": "Altaic (Other)"
+  },
+  {
+
+    "value": "",
+    "text": "Tuvalu"
+  },
+  {
+
+    "value": "tw",
+    "text": "Twi"
+  },
+  {
+
+    "value": "",
+    "text": "Tuvinian"
+  },
+  {
+
+    "value": "",
+    "text": "Udmurt"
+  },
+  {
+
+    "value": "",
+    "text": "Ugaritic"
+  },
+  {
+
+    "value": "ug",
+    "text": "Uighur"
+  },
+  {
+
+    "value": "uk",
+    "text": "Ukrainian"
+  },
+  {
+
+    "value": "",
+    "text": "Umbundu"
+  },
+  {
+
+    "value": "",
+    "text": "Undetermined"
+  },
+  {
+
+    "value": "ur",
+    "text": "Urdu"
+  },
+  {
+
+    "value": "uz",
+    "text": "Uzbek"
+  },
+  {
+
+    "value": "",
+    "text": "Vai"
+  },
+  {
+
+    "value": "ve",
+    "text": "Venda"
+  },
+  {
+
+    "value": "vi",
+    "text": "Vietnamese"
+  },
+  {
+
+    "value": "vo",
+    "text": "Volapük"
+  },
+  {
+
+    "value": "",
+    "text": "Votic"
+  },
+  {
+
+    "value": "",
+    "text": "Wakashan languages"
+  },
+  {
+
+    "value": "",
+    "text": "Walamo"
+  },
+  {
+
+    "value": "",
+    "text": "Waray"
+  },
+  {
+
+    "value": "",
+    "text": "Washo"
+  },
+  {
+
+    "value": "cy",
+    "text": "Welsh"
+  },
+  {
+
+    "value": "",
+    "text": "Sorbian languages"
+  },
+  {
+
+    "value": "wa",
+    "text": "Walloon"
+  },
+  {
+
+    "value": "wo",
+    "text": "Wolof"
+  },
+  {
+
+    "value": "",
+    "text": "Kalmyk"
+  },
+  {
+
+    "value": "xh",
+    "text": "Xhosa"
+  },
+  {
+
+    "value": "",
+    "text": "Yao"
+  },
+  {
+
+    "value": "",
+    "text": "Yapese"
+  },
+  {
+
+    "value": "yi",
+    "text": "Yiddish"
+  },
+  {
+
+    "value": "yo",
+    "text": "Yoruba"
+  },
+  {
+
+    "value": "",
+    "text": "Yupik languages"
+  },
+  {
+
+    "value": "",
+    "text": "Zapotec"
+  },
+  {
+
+    "value": "",
+    "text": "Zenaga"
+  },
+  {
+
+    "value": "za",
+    "text": "Zhuang"
+  },
+  {
+
+    "value": "",
+    "text": "Zande"
+  },
+  {
+
+    "value": "zu",
+    "text": "Zulu"
+  },
+  {
+
+    "value": "",
+    "text": "Zuni"
+  },
+  {
+
+    "value": "ro",
+    "text": "Romanian"
+  },
+  {
+
+    "value": "pb",
+    "text": "Portuguese (BR)"
+  },
+  {
+
+    "value": "me",
+    "text": "Montenegrin"
+  },
+  {
+
+    "value": "zt",
+    "text": "Chinese (traditional)"
+  },
+  {
+
+    "value": "ze",
+    "text": "Chinese bilingual"
+  },
+  {
+
+    "value": "pm",
+    "text": "Portuguese (MZ)"
+  },
+  {
+
+    "value": "ex",
+    "text": "Extremaduran"
+  }
+]
