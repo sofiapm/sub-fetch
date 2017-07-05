@@ -37,6 +37,19 @@ class ArrayHelper {
     }
     return array
   }
+
+  /**
+   * Get elements at indexes
+   */
+
+  getAtIndexes (array, indexes) {
+    const elements = []
+    for (let index = 0; index < array.length; index++) {
+      const element = array[index]
+      if (element) elements.push(element)
+    }
+    return elements
+  }
 }
 
 module.exports = new ArrayHelper()
