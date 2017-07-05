@@ -3,8 +3,8 @@ const stringHelper = require(path.resolve('src/helpers/string-helper'))
 const arrayHelper = require(path.resolve('src/helpers/array-helper'))
 
 class MultipleSelectManager {
-  constructor () {
-    this.selectedIndexes = []
+  constructor (selectedIndexes) {
+    this.selectedIndexes = selectedIndexes || []
 
     this.select = document.createElement('select')
     this.select.multiple = true
@@ -29,7 +29,7 @@ class MultipleSelectManager {
 
   addOptions (options) {
     for (var i = 0; i < options.length; i++) {
-      const option = this.createOption(options[i].value, stringHelper.capitalizeFirstLetters(options[i].text))
+      const option = this.createOption(options[i].value, stringHelper.capitalizeFirstLetters(options[i].text), this.isSelected(i))
       this.select.add(option)
     }
   }
@@ -40,10 +40,11 @@ class MultipleSelectManager {
    * @param {string} text - option text to be presented for user
    */
 
-  createOption (value, text) {
+  createOption (value, text, selected) {
     const option = document.createElement('option')
     option.value = value
     option.text = text
+    option.selected = selected
 
     return option
   }
