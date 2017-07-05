@@ -2,8 +2,8 @@
  * Module dependencies.
  */
 
-const config = require('config')
-const { BrowserWindow } = require('electron')
+const path = require('path')
+const settingsWindow = require(path.resolve('src/settings/window'))
 
 /**
  * Export `Menu Template`.
@@ -20,8 +20,6 @@ class MenuTemplate {
   }
 
   editTemplate () {
-    const self = this
-
     return {
       label: 'SubFetch',
       submenu: [
@@ -29,7 +27,7 @@ class MenuTemplate {
           label: 'Settings',
           role: 'settings',
           click (menuItem, browserWindow, event) {
-            self.createSettingsWindow()
+            settingsWindow.create()
           }
         },
         {
@@ -54,13 +52,6 @@ class MenuTemplate {
         }
       ]
     }
-  }
-
-  createSettingsWindow () {
-    const settingsWindow = new BrowserWindow({ minWidth: 100, maxWidth: 400, width: 400, height: 400, show: true })
-    settingsWindow.loadURL(config.get('templates.settings_window.dir'))
-    settingsWindow.webContents.openDevTools()
-    return settingsWindow
   }
 }
 
