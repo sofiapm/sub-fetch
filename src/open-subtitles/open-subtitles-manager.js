@@ -6,10 +6,11 @@ const path = require('path')
 const request = require('request')
 
 const parser = require('episode-parser')
+const auth = require(path.resolve('db/auth.json'))
+
 const OS = require('opensubtitles-api')
 const openSubtitles = new OS(auth.open_subtitles)
 
-const auth = require(path.resolve('db/auth.json'))
 const fileManager = require(path.resolve('src/file/file-manager'))
 
 /**
@@ -18,8 +19,8 @@ const fileManager = require(path.resolve('src/file/file-manager'))
 
 class OpenSubtitlesManager {
 
-  search (file, callback) {
-    const query = this.buildHashBestSearchObject(file, fileManager.hashFile(file.path))
+  search (file, languageIds, callback) {
+    const query = this.buildHashBestSearchObject(file, fileManager.hashFile(file.path), languageIds)
 
     openSubtitles
             .search(query)
@@ -33,7 +34,7 @@ class OpenSubtitlesManager {
             })
   }
 
-  buildHashBestSearchObject (file, hash) {
+  buildHashBestSearchObject (file, hash, languageIds) {
     const data = parser(file.name)
 
     return {
@@ -42,17 +43,16 @@ class OpenSubtitlesManager {
       path: file.path,
       filename: file.name,
       season: data.season,
-      episode: data.episode
-
-            // limit: '5',                 //Default returns the best
-            // query: data.name,             // Text-based query, this is not recommended.
-            // gzip: true                  // returns url to gzipped subtitles, defaults to false
+      episode: data.episode,
+      sublanguageid: languageIds
     }
   }
 
   processBestResponse (path, subtitles, callback) {
-    if (subtitles['en']) {
-      this.requestSubtitle(subtitles['en'].url, (error, data) => {
+    const bestSub = this.findBestSubtitle(subtitles)
+
+    if (bestSub) {
+      this.requestSubtitle(bestSub.url, (error, data) => {
         if (!error) {
           fileManager.writeFile(path, data, (err, data) => {
             callback(err, data)
@@ -71,6 +71,15 @@ class OpenSubtitlesManager {
     }, (error, res, buffer) => {
       return callback(error, buffer)
     })
+  }
+
+  findBestSubtitle (subtitles) {
+    let best
+    Object.entries(subtitles).forEach(([key, val]) => {
+      best = best && best.score > val.score ? best : val
+    })
+
+    return best
   }
 }
 
