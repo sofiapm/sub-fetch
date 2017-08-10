@@ -23,15 +23,15 @@ class OpenSubtitlesManager {
     const query = this.buildHashBestSearchObject(file, fileManager.hashFile(file.path), languageIds)
 
     openSubtitles
-            .search(query)
-            .then(subtitles => {
-              this.processBestResponse(file.path, subtitles, (error, data) => {
-                callback(error, file.name)
-              })
-            }).catch((error) => {
-              console.log(error)
-              callback(error, file.name)
-            })
+      .search(query)
+      .then(subtitles => {
+        this.processAllResonses(file.path, subtitles, (error, data) => {
+          callback(error, { name: file.name, lang: data.lang })
+        })
+      }).catch((error) => {
+        console.log(error)
+        callback(error, file.name)
+      })
   }
 
   buildHashBestSearchObject (file, hash, languageIds) {
@@ -50,14 +50,29 @@ class OpenSubtitlesManager {
 
   processBestResponse (path, subtitles, callback) {
     const bestSub = this.findBestSubtitle(subtitles)
-
     if (bestSub) {
       this.requestSubtitle(bestSub.url, (error, data) => {
         if (!error) {
-          fileManager.writeFile(path, data, (err, data) => {
+          fileManager.writeFile({ path }, data, (err, data) => {
             callback(err, data)
           })
         }
+      })
+    } else {
+      callback('No subtitle found.', path)
+    }
+  }
+
+  processAllResonses (path, subtitles, callback) {
+    if (subtitles && Object.keys(subtitles).length > 0) {
+      Object.entries(subtitles).forEach(([key, val]) => {
+        this.requestSubtitle(val.url, (error, data) => {
+          if (!error) {
+            fileManager.writeFile({ path, lang: val.lang }, data, (err, res) => {
+              callback(err, { lang: val.lang })
+            })
+          }
+        })
       })
     } else {
       callback('No subtitle found.', path)

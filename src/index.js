@@ -21,8 +21,9 @@ holder.ondrop = ev => {
 
     subtitlesManager.search(ev.dataTransfer.files[i], userDataManager.get('languages').toString(), (err, data) => {
       const row = table.insertRow(0)
-      row.insertCell(0).innerHTML = data
-      row.insertCell(1).innerHTML = !err ? check : nocheck
+      row.insertCell(0).innerHTML = data.name
+      row.insertCell(1).innerHTML = data.lang || ''
+      row.insertCell(2).innerHTML = !err ? check : nocheck
     })
   }
   ev.preventDefault()

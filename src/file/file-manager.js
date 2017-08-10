@@ -19,8 +19,8 @@ class FileManager {
     }
   }
 
-  writeFile (path, buffer, callback) {
-    const subtitlePath = this.getSubtitlePath(path)
+  writeFile (fileData, buffer, callback) {
+    const subtitlePath = this.getSubtitlePath(fileData.path, fileData.lang)
 
     fs.writeFile(subtitlePath, buffer.toString(), function (err, data) {
       if (err) {
@@ -31,15 +31,16 @@ class FileManager {
     })
   }
 
-  getSubtitlePath (path) {
+  getSubtitlePath (path, language) {
     const extension = this.getExtension(path)
+    const newExtensionWithLang = language ? `srt.${language}` : 'srt'
     return path.split('.')
-        .reverse()
-        .join('.')
-        .replace(extension, 'srt')
-        .split('.')
-        .reverse()
-        .join('.')
+      .reverse()
+      .join('.')
+      .replace(extension, newExtensionWithLang)
+      .split('.')
+      .reverse()
+      .join('.')
   }
 
   getExtension (path) {

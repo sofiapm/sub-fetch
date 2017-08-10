@@ -14,6 +14,13 @@ describe('fileManager', function () {
       assert.equal(pathCase, 'The.Affair.S03E05.WEBRip.XviD-FUM[ettv].srt')
     })
 
+    it('should return same path with `.srt` extension, even if file name as `avi` in it', function () {
+      const path = 'Manhunteravi avi 1986 720p BRRip.avi.x264-MgB.avi'
+
+      const pathCase = fileManager.getSubtitlePath(path)
+      assert.equal(pathCase, 'Manhunteravi avi 1986 720p BRRip.avi.x264-MgB.srt')
+    })
+
     it('shoud return same path with `.srt` extension, even if file name have spaces', function () {
       const path = 'Manhunter 1986 720p BRRip x264-MgB.mkv'
 
@@ -33,15 +40,15 @@ describe('fileManager', function () {
 
   describe('#writeFile', function () {
     it('shoud write file to specified path', function (done) {
-      const newFilePath = config.get('test.tv_shows.dir') + 'The.Affair.S03E05.WEBRip.XviD-FUM[ettv]_new_file.srt'
-      const oldFilePath = config.get('test.tv_shows.dir') + 'The.Affair.S03E05.WEBRip.XviD-FUM[ettv].avi'
+      const subtitleFilePath = config.get('test.tv_shows.dir') + 'The.Affair.S03E05.WEBRip.XviD-FUM[ettv]_new_file.srt'
+      const tvShowFilePath = config.get('test.tv_shows.dir') + 'The.Affair.S03E05.WEBRip.XviD-FUM[ettv].avi'
 
-      fs.readFile(oldFilePath, {encoding: 'utf-8'}, function (err, data) {
+      fs.readFile(tvShowFilePath, {encoding: 'utf-8'}, function (err, data) {
         if (err) {
           assert.ok(false)
           done(err)
         } else {
-          fileManager.writeFile(newFilePath, data, (err, data) => {
+          fileManager.writeFile({ path: subtitleFilePath }, data, (err, data) => {
             assert.equal(undefined, err)
 
             done()
