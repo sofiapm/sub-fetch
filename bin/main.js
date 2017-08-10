@@ -34,11 +34,11 @@ app.on('activate', () => {
  */
 
 function createMainWindow () {
-  const win = new BrowserWindow({ minWidth: 500, maxWidth: 500, width: 500, height: 400 })
+  const win = new BrowserWindow({ minWidth: 500, maxWidth: 500, width: 500, height: 500, maxHeight: 500 })
 
   win.loadURL(config.get('templates.main_window.dir'))
 
-  //win.webContents.openDevTools()
+  // win.webContents.openDevTools()
 
   win.webContents.on('will-navigate', function (event, url) {
     event.preventDefault()
