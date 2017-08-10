@@ -65,7 +65,8 @@ class OpenSubtitlesManager {
 
   processAllResonses (path, subtitles, callback) {
     if (subtitles && Object.keys(subtitles).length > 0) {
-      Object.entries(subtitles).forEach(([key, val]) => {
+      Object.keys(subtitles).forEach((key) => {
+        const val = subtitles[key]
         this.requestSubtitle(val.url, (error, data) => {
           if (!error) {
             fileManager.writeFile({ path, lang: val.lang }, data, (err, res) => {

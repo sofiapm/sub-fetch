@@ -46,6 +46,10 @@ class FileManager {
   getExtension (path) {
     return path.split('.').pop()
   }
+
+  getFileName (path) {
+    return path.split('/').pop()
+  }
 }
 
 module.exports = new FileManager()

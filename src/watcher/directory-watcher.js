@@ -1,4 +1,10 @@
 const chokidar = require("chokidar");
+const path = require('path')
+const fs = require('fs')
+const fileManager = require(path.resolve('src/file/file-manager.js'))
+const subtitlesManager = require(path.resolve('src/open-subtitles/open-subtitles-manager'))
+const UserDataManager = require(path.resolve('src/user-data/user-data-manager'))
+const userDataManager = new UserDataManager()
 
 class DirWatcher {
 
@@ -11,11 +17,15 @@ class DirWatcher {
     })
 
     this.watcher
-
       .on('ready', this.onWatcherReady)
-      .on('add', this.onFileAdd)
-      .on('addDir', this.onDirAdd)
-      .on('change', this.onFileChange)
+      .on('add', (path) => {
+        console.log('[Watcher] File', path, 'has been added');
+        const newFile = this.handleNewFile(path)
+        this.searchSubtitles(newFile)
+      })
+      .on('addDir', (path) => {
+        console.log('[Watcher] Directory', path, 'has been added');
+      })
       .on('error', this.onError)
   }
 
@@ -27,16 +37,18 @@ class DirWatcher {
     console.log('[Watcher] Error happened: ', error);
   }
 
-  onFileAdd(path) {
-    console.log('[Watcher] File', path, 'has been added');
+  searchSubtitles(file) {
+    subtitlesManager.search(file, userDataManager.get('languages').toString(), (err, data) => {
+      !err ? console.log(`Downloaded subtitle for file ${data.name}. Language: ${data.lang}`)
+        : console.log(`Could not download subtitle for file ${data.name}: `, err)
+    })
   }
 
-  onDirAdd(path) {
-    console.log('[Watcher] Directory', path, 'has been added');
-  }
-
-  onFileChange(path) {
-    console.log('[Watcher] File', path, 'has been changed');
+  handleNewFile(path) {
+    return {
+      path,
+      name: fileManager.getFileName(path)
+    }
   }
 }
 
