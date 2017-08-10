@@ -5,13 +5,25 @@ const userDataManager = new UserDataManager()
 
 class WatcherManager {
 
-  startWatcher() {
-    const path = this.getPath()
-    new DirectoryWatcher(path)
+  constructor () {
+    this.startWatcher()
   }
 
-  getPath() {
-    return userDataManager.get('directories')[0]
+  startWatcher () {
+    const paths = this.getPaths()
+    this.watcher = new DirectoryWatcher(paths)
+  }
+
+  watch (paths) {
+    this.watcher.watch(paths)
+  }
+
+  unWatch (paths) {
+    this.watcher.unWatch(paths)
+  }
+
+  getPaths () {
+    return userDataManager.get('directories')
   }
 }
 

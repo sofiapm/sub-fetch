@@ -23,6 +23,14 @@ class DirWatcher {
       .on('error', this.onError)
   }
 
+  watch (paths) {
+    this.watcher.add(paths)
+  }
+
+  unWatch (paths) {
+    this.watcher.unwatch(paths)
+  }
+
   onWatcherReady () {
     console.info('[Watcher] Watcher is ready.')
   }

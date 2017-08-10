@@ -19,7 +19,6 @@ let win = null
 app.on('ready', () => {
   createMenu()
   createMainWindow()
-  startWatcher()
 })
 
 app.on('activate', () => {
@@ -34,7 +33,7 @@ app.on('activate', () => {
  * Functions
  */
 
-function createMainWindow() {
+function createMainWindow () {
   const win = new BrowserWindow({ minWidth: 500, maxWidth: 500, width: 500, height: 500, maxHeight: 500 })
 
   win.loadURL(config.get('templates.main_window.dir'))
@@ -46,11 +45,11 @@ function createMainWindow() {
   })
 }
 
-function createMenu() {
+function createMenu () {
   const menu = Menu.buildFromTemplate(menuTemplate.template())
   Menu.setApplicationMenu(menu)
 }
 
-function startWatcher() {
+function startWatcher () {
   watcherManager.startWatcher()
 }
