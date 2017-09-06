@@ -30,7 +30,7 @@ class OpenSubtitlesManager {
         })
       }).catch((error) => {
         console.log(error)
-        callback(error, file.name)
+        callback(error, { name: file.name })
       })
   }
 
@@ -42,8 +42,8 @@ class OpenSubtitlesManager {
       filesize: file.size,
       path: file.path,
       filename: file.name,
-      season: data.season,
-      episode: data.episode,
+      season: data ? data.season : undefined,
+      episode: data ? data.episode : undefined,
       sublanguageid: languageIds
     }
   }
