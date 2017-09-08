@@ -3,7 +3,7 @@ const { BrowserWindow } = require('electron')
 
 class Window {
   create () {
-    const settingsWindow = new BrowserWindow({ minWidth: 100, maxWidth: 400, width: 400, height: 600, show: true })
+    const settingsWindow = new BrowserWindow({ minWidth: 400, maxWidth: 400, width: 400, height: 600, maxHeight: 600, show: true })
     settingsWindow.loadURL(config.get('templates.settings_window.dir'))
 
     return settingsWindow

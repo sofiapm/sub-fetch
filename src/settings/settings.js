@@ -10,6 +10,8 @@ const userDataManager = new UserDataManager()
 const { remote } = require('electron')
 const dialog = remote.require('electron').dialog
 
+const watcherManager = require(path.resolve('src/watcher/watcher-manager'))
+
 let multiSelectLanguagesIndexes
 if (userDataManager.get('languages-indexes')) {
   multiSelectLanguagesIndexes = userDataManager.get('languages-indexes')
@@ -47,6 +49,15 @@ saveButton.addEventListener('click', () => {
 
   // save directories to watch
   const directoriesToWatch = []
+  // unwatch previous saved directories
+  watcherManager.unWatch(userDataManager.get('directories'))
+
+  // TODO: enable multi directory saving
+  // dif between previous saved directories and new ones, only after that, unwatch and watch
+
   directoriesToWatch.push(document.getElementById('sub-directory-input').value)
   userDataManager.set('directories', directoriesToWatch)
+
+  // watch new saved directories
+  watcherManager.watch(userDataManager.get('directories'))
 })

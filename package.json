@@ -14,10 +14,12 @@
     "lint": "./node_modules/.bin/eslint src; exit 0"
   },
   "dependencies": {
+    "chokidar": "^1.7.0",
     "config": "^1.24.0",
     "electron": "^1.6.11",
     "electron-prebuilt": "^1.4.6",
     "episode-parser": "^1.2.0",
+    "fork-pool": "^2.0.0",
     "md5-file": "^3.1.1",
     "opensubtitles-api": "^3.3.0"
   },
