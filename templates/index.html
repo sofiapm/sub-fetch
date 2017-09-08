@@ -1,19 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>Sub Fetch</title>
-	<meta charset="UTF-8"/>
+    <meta charset="UTF-8" />
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/_index.css">
 </head>
+
 <body>
     <div class="title">SubFetch</div>
     <div class="line"> </div>
-    <div class="drag-area" id="holder">
-        <img src="../images/upload3.png" />
+    <div class="drag-area">
+        <div class='dragable-area' id="holder"></div>
+        <div class='upload-container' id="uploader">
+            <img id="upload-img" src="../images/upload3.png" />
+        </div>
     </div>
 
     <h2>Feedback: </h2>
+    <div class="load-area" id="loader-area">
+        <img class="loader" id="sub-loader" src="../images/loader.gif" />
+    </div>
 
     <p id="text"></p>
     <div class="results-container">
@@ -24,4 +32,5 @@
         require('./../src/index.js');
     </script>
 </body>
+
 </html>

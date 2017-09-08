@@ -5,18 +5,31 @@
     width:100%;
     height:100px;
     background-color: rgba(232, 204, 176, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: relative;
 }
 
 .drag-area img {
     width: 50px;
 }
 
-.drag-area:hover img {
-    width: 60px;
+.upload-container,
+.dragable-area {
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.dragable-area{
+    z-index: 10;
+}
+/* .drag-area:hover img {
+    width: 60px;
+} */
 
 table {
     width: 100%;
@@ -35,4 +48,15 @@ td
     height: 200px;
     border-bottom: 0.5px solid lightslategray;
     overflow: auto;
+}
+
+.load-area {
+    align-items: center;
+    justify-content: center;
+    position: inherit;
+    display: none;
+}
+
+.loader {
+    width: 30px;
 }
