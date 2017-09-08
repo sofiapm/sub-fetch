@@ -15,6 +15,9 @@ module.exports = {
     },
     settings_window: {
       dir: `file://${__dirname}/../templates/settings.html`
+    },
+    about_window: {
+      dir: `file://${__dirname}/../templates/about.html`
     }
   },
   scripts: {

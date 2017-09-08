@@ -4,6 +4,7 @@
 
 const path = require('path')
 const settingsWindow = require(path.resolve('src/settings/window'))
+const aboutWindow = require(path.resolve('src/about/window'))
 
 /**
  * Export `Menu Template`.
@@ -46,6 +47,12 @@ class MenuTemplate {
       label: 'About',
       role: 'about',
       submenu: [
+        {
+          label: 'About Us',
+          click () {
+            aboutWindow.create()
+          }
+        },
         {
           label: 'Learn More',
           click () { require('electron').shell.openExternal('https://github.com/sofiapm/sub-fetch') }
